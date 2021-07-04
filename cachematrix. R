@@ -20,3 +20,24 @@ cacheSolve <- function(x, ...) {
                 message("getting cached data")
                 return(inventario)
 }
+##       Test par ver si funciona
+##prueba = function(num){
+##        ## @num: una matriz inversa
+##        
+##        temp = makeCacheMatrix(num)
+##        
+##        start.time = Sys.time()
+##        cacheSolve(temp)
+##        ver = Sys.time() - start.time
+##        print(ver)
+##        
+##        start.time = Sys.time()
+##        cacheSolve(temp)
+##        ver = Sys.time() - start.time
+##        print(ver)
+##}
+##Matriz de 10 filas y columnas
+##set.seed(123)
+##alea = rnorm(100)
+##num11 = matrix(r, nrfilas=10, ncolum=10)
+##prueba(num1)
