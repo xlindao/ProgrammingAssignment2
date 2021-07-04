@@ -1,25 +1,22 @@
 ##Revisemen la funcion
 
 makeCacheMatrix <- function(x = matrix()) {
-         inv = NULL
+         inventario = NULL
         set = function(y) {
                 x <<- y
-                inv <<- NULL
+                inventario <<- NULL
         }
         get = function() x
-        setinv = function(inverse) inv <<- inverse 
-        getinv = function() inv
-        list(set=set, get=get, setinv=setinv, getinv=getinv)
+        setinventario = function(inverse) inv <<- inverse 
+        getinventario = function() inventario 
+        list(set=set, get=get, setinv=setinventario, getinventario=getinventario)
 }
 }
-
-
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        inv = x$getinv()
+        inventario = x$getinventario()
         
-        if (!is.null(inv)){
+        if (!is.null(inventario)){
                 message("getting cached data")
-                return(inv)
+                return(inventario)
 }
